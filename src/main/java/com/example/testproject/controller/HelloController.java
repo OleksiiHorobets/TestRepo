@@ -16,8 +16,57 @@ public class HelloController {
     public String sayHello(@PathVariable long id) {
         if (id < 0) {
             return "ID is incorrect!";
-        } else {
-            return "Your request is processing!";
         }
+
+        System.out.println("Lines to trigger SonarCloud");
+
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+
+        return "Finally";
     }
 }
