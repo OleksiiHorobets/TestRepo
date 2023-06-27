@@ -2,12 +2,14 @@ name: Java CI pipeline with Gradle
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - feature/*
   pull_request:
-    branches: [ "main" ]
+    types: [opened, synchronize, reopened]
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
 
 jobs:
   build:
@@ -37,7 +39,7 @@ jobs:
       - name: Run Build
         run: |
           chmod +x gradlew
-          ./gradlew clean build 
+          ./gradlew clean build
       - name: Generate JacocoReport
         run: ./gradlew test jacocoTestReport
       - name: Upload Jacoco Report
@@ -51,13 +53,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew build sonar --info
-        
-#       - name: Check SonarCloud Quality Gate
-#         run: |
-#           STATUS=$(curl --user "${{ secrets.SONAR_TOKEN }}:" \
-#             -s "https://sonarcloud.io/api/qualitygates/project_status?projectKey=OleksiiHorobets_TestRepo" \
-#             | jq -r '.projectStatus.status')
-#           if [ "$STATUS" != "OK" ]; then
-#             echo "SonarCloud Quality Gate failed."
-#             exit 1
-#           fi
