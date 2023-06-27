@@ -23,6 +23,8 @@ public class HelloController {
         System.out.println("Lines to trigger SonarCloud");
         System.out.println("Lines to trigger SonarCloud");
         System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
+        System.out.println("Lines to trigger SonarCloud");
         System.out.println("Lines to trrrigger SonarCloud");
         System.out.println("Lines to trigger SonarCloud");
         System.out.println("Lines to trigger SonarCloud");
